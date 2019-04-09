@@ -19,6 +19,8 @@ public class TestProperties {
 		fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\OR.properties");
 		OR.load(fis);
 		
+		System.out.println(System.getProperty("user.dir"));
+		
 		System.out.println(config.getProperty("browser"));
 		System.out.println(OR.getProperty("bmlBtn"));
 		
