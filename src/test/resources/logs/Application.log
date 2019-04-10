@@ -1,12 +1,12 @@
-09/04/2019 11:40:19 devpinoyLogger Config file loaded !!!
-09/04/2019 11:40:19 devpinoyLogger OR file loaded !!!
-09/04/2019 11:40:22 devpinoyLogger Chrome launched !!!
-09/04/2019 11:40:24 devpinoyLogger Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
-09/04/2019 11:40:26 devpinoyLogger inside Login Test
-09/04/2019 11:40:26 devpinoyLogger Login successfully executed 
-09/04/2019 11:40:27 devpinoyLogger Add Customer button on Top clicked
-09/04/2019 11:40:27 devpinoyLogger exceldata: firstname inserted
-09/04/2019 11:40:27 devpinoyLogger exceldata: lastname inserted
-09/04/2019 11:40:27 devpinoyLogger exceldata: postcode inserted
-09/04/2019 11:40:28 devpinoyLogger Add Customer button at bottom clicked
-09/04/2019 11:40:29 devpinoyLogger Test execution completed !!!
+10/04/2019 11:29:40 devpinoyLogger Config file loaded !!!
+10/04/2019 11:29:40 devpinoyLogger OR file loaded !!!
+10/04/2019 11:29:43 devpinoyLogger Chrome launched !!!
+10/04/2019 11:29:46 devpinoyLogger Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+10/04/2019 11:29:50 devpinoyLogger inside Login Test
+10/04/2019 11:29:51 devpinoyLogger Login successfully executed 
+10/04/2019 11:29:52 devpinoyLogger Add Customer button on Top clicked
+10/04/2019 11:29:52 devpinoyLogger exceldata: firstname inserted
+10/04/2019 11:29:52 devpinoyLogger exceldata: lastname inserted
+10/04/2019 11:29:53 devpinoyLogger exceldata: postcode inserted
+10/04/2019 11:29:53 devpinoyLogger Add Customer button at bottom clicked
+10/04/2019 11:29:54 devpinoyLogger Test execution completed !!!

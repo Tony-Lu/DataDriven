@@ -2,36 +2,45 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[Capturing screenshot]]>
+      <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg">Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg"><img src="F:\screenshot\error.jpg" height=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[Capturing screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg">Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Wed_Apr_10_05_14_02_CST_2019.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg"><img src="F:\screenshot\error.jpg" height=200 width=200></img></a>]]>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Apr_10_05_14_02_CST_2019.jpg><img src=Wed_Apr_10_05_14_02_CST_2019.jpg height=300 width=300></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[AddCustomerTest executed!]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Apr_10_05_17_04_CST_2019.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Apr_10_05_17_04_CST_2019.jpg><img src=Wed_Apr_10_05_17_04_CST_2019.jpg height=300 width=300></img></a>]]>
     </line>
   </reporter-output>
-  <suite name="Data Driven Basics" duration-ms="1762" started-at="2019-04-08T20:37:33Z" finished-at="2019-04-08T20:37:35Z">
+  <suite name="Data Driven Basics" duration-ms="396022" started-at="2019-04-09T21:14:01Z" finished-at="2019-04-09T21:20:37Z">
     <groups>
     </groups>
-    <test name="Bank Manager Login Test" duration-ms="538" started-at="2019-04-08T20:37:33Z" finished-at="2019-04-08T20:37:33Z">
+    <test name="Bank Manager Login Test" duration-ms="181146" started-at="2019-04-09T21:14:01Z" finished-at="2019-04-09T21:17:02Z">
       <class name="com.w2a.testcases.BankManagerLoginTest">
-        <test-method status="FAIL" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@503d687a]" name="loginAsBankManager" duration-ms="504" started-at="2019-04-09T04:37:33Z" finished-at="2019-04-09T04:37:33Z">
+        <test-method status="FAIL" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@2756c0a7]" name="loginAsBankManager" duration-ms="459" started-at="2019-04-10T05:14:01Z" finished-at="2019-04-10T05:14:01Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Login not successfull]]>
@@ -70,28 +79,31 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Capturing screenshot]]>
+              <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg">Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Wed_Apr_10_05_14_02_CST_2019.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg"><img src="F:\screenshot\error.jpg" height=200 width=200></img></a>]]>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Apr_10_05_14_02_CST_2019.jpg><img src=Wed_Apr_10_05_14_02_CST_2019.jpg height=300 width=300></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test name="Add Customer Test" duration-ms="1159" started-at="2019-04-08T20:37:34Z" finished-at="2019-04-08T20:37:35Z">
+    <test name="Add Customer Test" duration-ms="214777" started-at="2019-04-09T21:17:02Z" finished-at="2019-04-09T21:20:37Z">
       <class name="com.w2a.testcases.AddCustomerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@1eb5174b]" name="setUp" is-config="true" duration-ms="7002" started-at="2019-04-09T04:37:26Z" finished-at="2019-04-09T04:37:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@4ba534b0]" name="setUp" is-config="true" duration-ms="6962" started-at="2019-04-10T05:13:54Z" finished-at="2019-04-10T05:14:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@1eb5174b]" name="addCustomer" duration-ms="1127" started-at="2019-04-09T04:37:34Z" data-provider="getData" finished-at="2019-04-09T04:37:35Z">
+        <test-method status="FAIL" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@4ba534b0]" name="addCustomer" duration-ms="1750" started-at="2019-04-10T05:17:02Z" data-provider="getData" finished-at="2019-04-10T05:17:04Z">
           <params>
             <param index="0">
               <value>
@@ -121,7 +133,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Customer not added successfull
 	at org.testng.Assert.fail(Assert.java:93)
-	at com.w2a.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:32)
+	at com.w2a.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,20 +164,26 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Capturing screenshot]]>
+              <![CDATA[AddCustomerTest executed!]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg">Screenshot</a>]]>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Apr_10_05_17_04_CST_2019.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank"href="F:\screenshot\error.jpg"><img src="F:\screenshot\error.jpg" height=200 width=200></img></a>]]>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Apr_10_05_17_04_CST_2019.jpg><img src=Wed_Apr_10_05_17_04_CST_2019.jpg height=300 width=300></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@1eb5174b]" name="tearDown" is-config="true" duration-ms="1434" started-at="2019-04-09T04:37:35Z" finished-at="2019-04-09T04:37:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@4ba534b0]" name="tearDown" is-config="true" duration-ms="1519" started-at="2019-04-10T05:20:37Z" finished-at="2019-04-10T05:20:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

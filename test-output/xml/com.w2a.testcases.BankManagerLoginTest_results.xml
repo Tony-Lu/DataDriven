@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="0.504">
+           time="0.459">
   <properties />
-            <testcase name="loginAsBankManager" time="0.504" classname="com.w2a.testcases.BankManagerLoginTest">
+            <testcase name="loginAsBankManager" time="0.459" classname="com.w2a.testcases.BankManagerLoginTest">
                 <failure type="java.lang.AssertionError"
                   message="Login not successfull"
               >
