@@ -12,6 +12,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -49,6 +50,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
+	public static String browser;
 	
 	@BeforeSuite
 	public void setUp() throws InterruptedException {
@@ -83,27 +85,41 @@ public class TestBase {
 				e.printStackTrace();
 			}
 			
+			//below if statement is for configuring Jenkins build: to select browser from Config.properties file:
+			if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()) {
+				
+				browser = System.getenv("browser");
+			}else {
+				
+				browser = config.getProperty("browser");
+			}
+			config.setProperty("browser", browser);
+			//========================================================================================================
+			
 			if(config.getProperty("browser").equals("firefox")) {
 				//use below if use Selenium new version, 
-				//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				log.debug("Firefox launched !!!");
 			}else if(config.getProperty("browser").equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
-				driver = new ChromeDriver();	
 				//below step is trying to fix the Jenkins issue: not launching chrome browser: but not work
-//				TimeUnit.SECONDS.sleep(1);
+//				ChromeOptions options = new ChromeOptions();
+//				options.addArguments("enable-automation");
+				// adding browser version: WebDriverManager.chromedriver().version("2.33").setup(); cannot be used here
+				//============================================
+				driver = new ChromeDriver();					
 				log.debug("Chrome launched !!!");
 			}else if(config.getProperty("browser").equals("IE")) {
-				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\\\src\\\\test\\\\resources\\\\executables\\IEDriverServer.exe");
+				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 				log.debug("IE launched !!!");
 			}
 			
-			driver.manage().window().maximize();			
-			driver.get(config.getProperty("testsiteurl"));
-			log.debug("Navigated to : "+config.getProperty("testsiteurl"));			
+			driver.manage().window().maximize();					
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.get(config.getProperty("testsiteurl"));
+			log.debug("Navigated to : "+config.getProperty("testsiteurl"));	
 			wait = new WebDriverWait(driver,5);			
 		}
 	}
