@@ -51,7 +51,7 @@ public class TestBase {
 	public static ExtentTest test;
 	
 	@BeforeSuite
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		
 		if(driver==null) {			
 			
@@ -91,6 +91,8 @@ public class TestBase {
 			}else if(config.getProperty("browser").equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
 				driver = new ChromeDriver();	
+				//below step is trying to fix the Jenkins issue: not launching chrome browser: but not work
+//				TimeUnit.SECONDS.sleep(1);
 				log.debug("Chrome launched !!!");
 			}else if(config.getProperty("browser").equals("IE")) {
 				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\\\src\\\\test\\\\resources\\\\executables\\IEDriverServer.exe");
@@ -98,9 +100,9 @@ public class TestBase {
 				log.debug("IE launched !!!");
 			}
 			
+			driver.manage().window().maximize();			
 			driver.get(config.getProperty("testsiteurl"));
-			log.debug("Navigated to : "+config.getProperty("testsiteurl"));
-			driver.manage().window().maximize();
+			log.debug("Navigated to : "+config.getProperty("testsiteurl"));			
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver,5);			
 		}
