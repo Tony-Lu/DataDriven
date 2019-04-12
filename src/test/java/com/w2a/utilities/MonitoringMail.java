@@ -35,7 +35,7 @@ public class MonitoringMail
 	     props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");   
 	     props.setProperty("mail.smtp.socketFactory.fallback", "false");   
 	     props.setProperty("mail.smtp.port", "465");   
-	     props.setProperty("mail.smtp.socketFactory.port", "465"); 
+	     props.setProperty("mail.smtp.socketFactory.port", "465"); 	
 
 		
 		  Authenticator auth = new SMTPAuthenticator();

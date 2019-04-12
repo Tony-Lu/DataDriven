@@ -15,8 +15,8 @@ public class TestHostAdd {	// No.22	// this class need further config, cause no 
 
 		MonitoringMail mail = new MonitoringMail();
 		String messageBody = "http://"+InetAddress.getLocalHost().getHostAddress()
-				+ ":8080/job/DataDrivenMavenProject/Extent_Reports/";
-		System.out.println(messageBody);
+				+ ":8080/job/DataDrivenMavenProject/Extent_20Report/";
+//		System.out.println(messageBody);
 		mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
 
 	}

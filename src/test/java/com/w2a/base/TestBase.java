@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -28,6 +29,8 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.utilities.ExcelReader;
 import com.w2a.utilities.ExtentManager;
 import com.w2a.utilities.TestUtil;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {	
 	/*WebDriver
@@ -98,7 +101,8 @@ public class TestBase {
 			
 			if(config.getProperty("browser").equals("firefox")) {
 				//use below if use Selenium new version, 
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\geckodriver.exe");
+//				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\geckodriver.exe");
+				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				log.debug("Firefox launched !!!");
 			}else if(config.getProperty("browser").equals("chrome")) {
@@ -106,15 +110,23 @@ public class TestBase {
 				//below step is trying to fix the Jenkins issue: not launching chrome browser: but not work
 //				ChromeOptions options = new ChromeOptions();
 //				options.addArguments("enable-automation");
-				// adding browser version: WebDriverManager.chromedriver().version("2.33").setup(); cannot be used here
+				// adding browser version: WebDriverManager.chromedriver().version("2.33").setup(); 
+//				WebDriverManager.chromedriver().setup();
 				//============================================
 				driver = new ChromeDriver();					
 				log.debug("Chrome launched !!!");
 			}else if(config.getProperty("browser").equals("IE")) {
-				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\IEDriverServer.exe");
+//				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\IEDriverServer.exe");
+				WebDriverManager.iedriver().setup();
 				driver = new InternetExplorerDriver();
 				log.debug("IE launched !!!");
 			}
+//			}else if(config.getProperty("browser").equals("Edge")) {
+//				System.setProperty("webdriver.edgedriver.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\MicrosoftWebDriver.exe");
+////				WebDriverManager.edgedriver().setup();
+//				driver = new EdgeDriver();
+//				log.debug("Edge launched !!!");
+//			}
 			
 			driver.manage().window().maximize();					
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
