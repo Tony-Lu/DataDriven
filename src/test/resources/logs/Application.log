@@ -1,22 +1,22 @@
-17/04/2019 03:15:51 devpinoyLogger Config file loaded !!!
-17/04/2019 03:15:51 devpinoyLogger OR file loaded !!!
-17/04/2019 03:15:56 devpinoyLogger Chrome launched !!!
-17/04/2019 03:16:00 devpinoyLogger Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
-17/04/2019 03:16:01 devpinoyLogger inside Login Test
-17/04/2019 03:16:02 devpinoyLogger Login successfully executed 
-17/04/2019 03:16:02 devpinoyLogger Add Customer button on Top clicked
-17/04/2019 03:16:03 devpinoyLogger exceldata: firstname inserted
-17/04/2019 03:16:03 devpinoyLogger exceldata: lastname inserted
-17/04/2019 03:16:03 devpinoyLogger exceldata: postcode inserted
-17/04/2019 03:16:04 devpinoyLogger Add Customer button at bottom clicked
-17/04/2019 03:16:08 devpinoyLogger Add Customer button on Top clicked
-17/04/2019 03:16:08 devpinoyLogger exceldata: firstname inserted
-17/04/2019 03:16:08 devpinoyLogger exceldata: lastname inserted
-17/04/2019 03:16:08 devpinoyLogger exceldata: postcode inserted
-17/04/2019 03:16:08 devpinoyLogger Add Customer button at bottom clicked
-17/04/2019 03:16:13 devpinoyLogger Add Customer button on Top clicked
-17/04/2019 03:16:13 devpinoyLogger exceldata: firstname inserted
-17/04/2019 03:16:13 devpinoyLogger exceldata: lastname inserted
-17/04/2019 03:16:13 devpinoyLogger exceldata: postcode inserted
-17/04/2019 03:16:13 devpinoyLogger Add Customer button at bottom clicked
-17/04/2019 03:16:19 devpinoyLogger Test execution completed !!!
+17/04/2019 03:21:27 devpinoyLogger Config file loaded !!!
+17/04/2019 03:21:27 devpinoyLogger OR file loaded !!!
+17/04/2019 03:21:31 devpinoyLogger Chrome launched !!!
+17/04/2019 03:21:35 devpinoyLogger Navigated to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+17/04/2019 03:21:35 devpinoyLogger inside Login Test
+17/04/2019 03:21:36 devpinoyLogger Login successfully executed 
+17/04/2019 03:21:36 devpinoyLogger Add Customer button on Top clicked
+17/04/2019 03:21:37 devpinoyLogger exceldata: firstname inserted
+17/04/2019 03:21:37 devpinoyLogger exceldata: lastname inserted
+17/04/2019 03:21:37 devpinoyLogger exceldata: postcode inserted
+17/04/2019 03:21:37 devpinoyLogger Add Customer button at bottom clicked
+17/04/2019 03:21:42 devpinoyLogger Add Customer button on Top clicked
+17/04/2019 03:21:42 devpinoyLogger exceldata: firstname inserted
+17/04/2019 03:21:42 devpinoyLogger exceldata: lastname inserted
+17/04/2019 03:21:42 devpinoyLogger exceldata: postcode inserted
+17/04/2019 03:21:42 devpinoyLogger Add Customer button at bottom clicked
+17/04/2019 03:21:46 devpinoyLogger Add Customer button on Top clicked
+17/04/2019 03:21:46 devpinoyLogger exceldata: firstname inserted
+17/04/2019 03:21:46 devpinoyLogger exceldata: lastname inserted
+17/04/2019 03:21:46 devpinoyLogger exceldata: postcode inserted
+17/04/2019 03:21:46 devpinoyLogger Add Customer button at bottom clicked
+17/04/2019 03:21:52 devpinoyLogger Test execution completed !!!
